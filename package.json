@@ -1,0 +1,25 @@
+{
+  "name": "serverside",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "get-folder-size": "^1.0.0",
+    "globe": "^0.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noatendler/story2016server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noatendler/story2016server/issues"
+  },
+  "homepage": "https://github.com/noatendler/story2016server#readme"
+}
