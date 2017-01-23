@@ -41,7 +41,7 @@ exports.saveData = function(req, res){
                     var saveDoc = new graphData({
                     topic: myTopic,
                     date: date,
-                    count: count,
+                    num: count,
                     });
 
                     saveDoc.save(function(err, res){
