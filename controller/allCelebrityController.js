@@ -12,6 +12,19 @@ exports.getData = function(req, res){
         if (err){
               throw err;
         }
+
+      function sortByFirstName(a, b) {
+          var sortStatus = 0;
+       
+          if (a.date < b.date) {
+              sortStatus = -1;
+          } else if (a.date > b.date) {
+                  sortStatus = 1;
+          }
+          return sortStatus;
+      }
+
+      docs.sort(sortByFirstName);
   
      t1 = docs; 
 
@@ -19,42 +32,42 @@ exports.getData = function(req, res){
             if (err){
                   throw err;
             }
-   
+    docs.sort(sortByFirstName); 
      t2 = docs; 
 
-      allCelebrity.find({topic:'alan backman'},function(error, docs){
+      allCelebrity.find({topic:'alan rickman'},function(error, docs){
             if (err){
                   throw err;
             }
-   
+   docs.sort(sortByFirstName);
      t3 = docs;
 
      allCelebrity.find({topic:'mohammad ali'},function(error, docs){
             if (err){
                   throw err;
             }
-   
+   docs.sort(sortByFirstName);
      t4 = docs;
 
       allCelebrity.find({topic:'fidel castro'},function(error, docs){
             if (err){
                   throw err;
             }
-   
+   docs.sort(sortByFirstName);
      t5 = docs;
 
       allCelebrity.find({topic:'carrie fisher'},function(error, docs){
             if (err){
                   throw err;
             }
-   
+   docs.sort(sortByFirstName);
      t6 = docs;
 
       allCelebrity.find({topic:'dabby reynolds'},function(error, docs){
             if (err){
                   throw err;
             }
-   
+   docs.sort(sortByFirstName);
      t7 = docs;
 
 
