@@ -12,13 +12,28 @@ exports.getData = function(req, res){
         if (err){
               throw err;
         }
-  
+
+         function sortByFirstName(a, b) {
+          var sortStatus = 0;
+       
+          if (a.date < b.date) {
+              sortStatus = -1;
+          } else if (a.date > b.date) {
+                  sortStatus = 1;
+          }
+          return sortStatus;
+      }
+ 
+    docs.sort(sortByFirstName);
      t1 = docs; 
+
 
         syria.find({topic:'Syrian refugees'},function(error, docs){
             if (err){
                   throw err;
             }
+
+      docs.sort(sortByFirstName);
    
      t2 = docs; 
 
