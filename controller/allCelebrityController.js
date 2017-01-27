@@ -63,7 +63,7 @@ exports.getData = function(req, res){
    docs.sort(sortByFirstName);
      t6 = docs;
 
-      allCelebrity.find({topic:'dabby reynolds'},function(error, docs){
+      allCelebrity.find({topic:'debby reynolds'},function(error, docs){
             if (err){
                   throw err;
             }
